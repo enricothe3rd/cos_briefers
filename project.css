@@ -396,7 +396,48 @@ margin-top: 20px;
     flex-direction: column;
     gap: 1rem;
 }
+@media only screen and (min-width: 200px) {
 
+nav{
+display: flex;
+align-items:start;
+flex-direction: column;
+position: fixed;
+width: 100%;
+z-index: 1000;
+}
+nav .logo{
+padding: 10px;
+}
+nav .logo img{
+width: 55px;
+height: 45px;
+margin-left: .5rem;
+}
+nav .container{
+flex-direction: column;
+margin-left: .2rem;
+border-top: 2px solid var(--secondary-color);
+width: 100%;
+display: none;
+font-size: 13px;
+}
+nav .logo-bars i{
+position: absolute;
+right: 5%;
+top: 1.9rem;
+}
+.container a{
+border-bottom: 2px solid var(--secondary-color);
+}
+nav form{
+display: none;
+}
+.container a{
+padding: 5px 15px;
+}
+
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 475px) {
 
@@ -557,7 +598,7 @@ right: 5%;
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 1024px ) {
 
-    
+
 /*  START OF NAVBAR 1 */
 nav{
 align-items:center;
@@ -568,16 +609,16 @@ z-index: 1000;
 justify-content: space-around;
 }
 nav .container{
-    justify-content: center;
+justify-content: center;
 flex-direction: row;
 border-top:none;
 display: flex;
-gap: .5rem;
+/* gap: .5rem; */
 }
 nav .container a{ 
 border-bottom: none;
-padding: 10px 10px;
-font-size: var(--text-font);
+padding: 10px 5px;
+font-size: 19px;
 }
 nav form{
 display: flex;
@@ -587,37 +628,31 @@ nav .logo-bars i{
 display: none;
 }
 nav .search-bar input{
-max-width: 180px;
+max-width: 190px;
 }  
 }
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1280px) {
-    nav .container{
-        flex-direction: row;
-        border-top:none;
-        display: flex;
-        }
-       nav .container a{
-            gap: .5rem;
-            font-size: 21px;
-            }
-
-      nav  .search-bar input{
-            max-width: 350px;
-            }  
-            
-  }
-
+/* nav .container{
+display: flex;
+} */
+nav .container a{
+gap: 1rem;
+font-size: 22px;
+}
+nav  .search-bar input{
+max-width: 350px;
+}  
+}
   @media only screen and (min-width: 1536px) {
-    nav .container{
-    
-        gap: .5rem;
-        }
-      nav  .container a{
-            font-size: 25px;
-            }
-            nav  .search-bar input{
-                max-width: 400px;
-                }  
+nav .container{
+gap: 1rem;
+}
+nav  .container a{
+font-size: 25px;
+}
+nav  .search-bar input{
+max-width: 450px;
+}  
   }
