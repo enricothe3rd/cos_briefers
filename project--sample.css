@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+:root{
+    --main-color: #4F6F52;
+    --secondary-color:#739072;
+    --tetriary-color:#86A789;
+    --fourth-color:#D2E3C8;
+    --navbar-font-size: 17px;
+}
+body{
+    background-color: var(--fourth-color);
+}
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   background-color: var(--main-color);
+
+}
+nav .logo {
+    padding: 10px;
+}
+nav .logo img{
+    width: 60px;
+    height: 50px;
+    margin-left: 40px;
+}
+
+.container{
+    display: flex;
+    
+}
+.container a{
+    text-decoration: none;
+    color: var(--fourth-color);
+    font-size: var(--navbar-font-size);
+    padding: 20px 10px;
+}
+
+.container a:hover{
+    background-color: var(--secondary-color);
+}
+ .search-bar input{
+    margin:auto;
+    width: 300px;
+    height: 30px;
+    max-width:300px;
+    border: 3px solid var(--secondary-color);
+}  
+.search-bar input:hover{
+    animation: all ease;
+    opacity: 90%;
+}
+
+.search-bar button{
+width: 50px;
+height: 30px;
+border-radius: 5px;
+border: 3px solid var(--secondary-color);
+
+}
+.search-bar button:hover,i:hover{
+    background-color: var(--main-color);
+    border-color: var(--fourth-color);
+    color: var(--fourth-color);
+    animation: all ease;
+}
+
+/* section 1 */
+.section_1{
+  
+    background:url('bg.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+   
+}
+.urs_intro_text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:1rem;
+    background-color: rgba(115, 144, 144, 0.5); 
+}
+.urs_intro_text .urs-text{
+    text-align: center;
+}
+.urs_intro_text .urs-text h2{
+    font-size: 2.2rem;
+    text-shadow:  -2px -2px 2px rgb(195, 193, 193);
+    color:#1e2c1f;
+    font-weight:bolder;
+}
+.urs_intro_text .urs-text hr{
+    height: 5px;
+    width: auto;
+    background-color: black;
+    border: none;
+}    
+.urs_intro_text .urs-text h1{
+    font-size: 3rem;
+    text-shadow:  -2px -2px 2px rgb(195, 193, 193);
+    color:#1e2c1f;
+    font-weight:bolder;
+}
+.cos-logo img{
+width: 140px;
+height: 150px;
+}
+
+.iso-logo img{
+    width: 250px;
+    }
+
+/* nav2 */
+.nav2-container{
+    display: flex;
+   
+    align-items: center;
+    gap: 75px;
+    background-color: var(--main-color);
+    margin-top: .5rem;
+   
+}
+.nav2-container a{
+    text-decoration: none;
+    color: var(--fourth-color);
+    font-size: var(--navbar-font-size);
+    padding: 15px 5px;
+}
+
+.nav2-container a:hover{
+    background-color: var(--secondary-color);
+}
+
+
+
+/* cos-org */
+.cos-org {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 13px;
+margin-top: 4rem;
+
+}
+.cos-org .org1 {
+
+text-align: center;
+  width: 20%;
+  border: 4px solid var(--main-color);
+  background-color: var(--tetriary-color );
+  padding: 10px;
+  color: black;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.cos-org .org1 img{
+    width: 70px;
+    height: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* navbar media queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+ 
+    nav .logo {
+        padding: 0;
+        padding-top: 10px;
+    }
+    nav .logo img{
+        width: 60px;
+        height: 45px;
+    }
+    
+    .container{
+        display: none;
+        /* margin-left: 4rem; */
+    }
+    
+ .search-bar input{
+    margin:auto;
+    height: 23px;
+    max-width:100px;
+}  
+.search-bar input:hover{
+    animation: none;
+}
+
+.search-bar button{
+max-width: 25px;
+height: 23px;
+}
+}
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    
+  }

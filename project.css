@@ -1,0 +1,595 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+margin: 0;
+padding: 0;
+line-height: 1.5;
+}
+:root{
+--main-color: #4F6F52;
+--secondary-color:#739072;
+--tertiary-color:#86A789;
+--fourth-color:#D2E3C8;
+--navbar-font-size: 17px;
+--text-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+body{
+/* background-color: var(--fourth-color); */
+background-color: var(#f7f7f7);
+}
+/*  START OF NAVBAR 1 */
+nav{
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: var(--main-color);
+}
+nav .logo-bars .logo {
+padding: 10px;
+}
+nav .logo-bars i {
+color: white;
+}
+nav .logo img{
+width: 70px;
+height: 50px;
+}
+.container{
+display: flex;
+margin-left: 4rem;
+}
+.container a{
+text-decoration: none;
+color: var(--fourth-color);
+font-size: var(--navbar-font-size);
+padding: 20px 10px;
+}
+.container a:hover{
+background-color: var(--secondary-color);
+}
+.search-bar input{
+margin:auto;
+width: 300px;
+height: 30px;
+max-width:300px;
+border: 3px solid var(--secondary-color);
+}  
+.search-bar input:hover{
+animation: all ease;
+opacity: 90%;
+}
+.search-bar button{
+width: 50px;
+height: 30px;
+border-radius: 5px;
+border: 3px solid var(--secondary-color);
+}
+.search-bar button:hover,i:hover{
+background-color: var(--main-color);
+border-color: var(--fourth-color);
+color: var(--fourth-color);
+animation: all ease;
+}
+
+
+/* ------------------------END----------- */
+
+
+/* START OF HEADER WITH LOGO AND CERTIFICATION OF ISO */
+.section_1{
+background:url(/bg_urs.jpeg);
+background-size: cover;
+background-position: center; 
+background-repeat: no-repeat;
+}
+.urs_intro_text{
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding:1rem;
+background-color: rgba(115, 144, 144, 0.5); 
+}
+.urs_intro_text .urs-text{
+text-align: center;
+}
+.urs_intro_text .urs-text h2{
+font-size: 2.2rem;
+text-shadow:  -2px -2px 2px rgb(195, 193, 193);
+color:#1e2c1f;
+font-weight:bolder;
+}
+.urs_intro_text .urs-text hr{
+height: 5px;
+width: auto;
+background-color: black;
+border: none;
+}    
+.urs_intro_text .urs-text h1{
+font-size: 3rem;
+text-shadow:  -2px -2px 2px rgb(195, 193, 193);
+color:#1e2c1f;
+font-weight:bolder;
+}
+.cos-logo img{
+width: 140px;
+height: 150px;
+}
+.iso-logo img{
+width: 250px;
+}
+
+    /* ---------------END------------- */
+
+
+/* START OF NAVBAR 2 */
+.nav2-container{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 25px;
+background-color: var(--main-color);
+margin-top: .5rem;
+}
+.nav2-container a{
+text-decoration: none;
+color: var(--fourth-color);
+font-size: var(--navbar-font-size);
+padding: 15px 5px;
+}
+.nav2-container a:hover{
+background-color: var(--secondary-color);
+}
+.search-bar button:hover,i:hover{
+background-color: var(--main-color);
+border-color: var(--fourth-color);
+color: var(--fourth-color);
+animation: all ease;
+}
+
+
+/* section 1 */
+.section_1{
+
+background:url('../bg.jpg');
+background-size: cover;
+background-position: center; 
+background-repeat: no-repeat;
+
+}
+.urs_intro_text{
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding:1rem;
+background-color: rgba(115, 144, 144, 0.5); 
+}
+.urs_intro_text .urs-text{
+text-align: center;
+}
+.urs_intro_text .urs-text h2{
+font-size: 2.2rem;
+text-shadow:  -2px -2px 2px rgb(195, 193, 193);
+color:#1e2c1f;
+font-weight:bolder;
+}
+.urs_intro_text .urs-text hr{
+height: 5px;
+width: auto;
+background-color: black;
+border: none;
+}    
+.urs_intro_text .urs-text h1{
+font-size: 3rem;
+text-shadow:  -2px -2px 2px rgb(195, 193, 193);
+color:#1e2c1f;
+font-weight:bolder;
+}
+.cos-logo img{
+width: 140px;
+height: 150px;
+}
+
+.iso-logo img{
+width: 250px;
+}
+
+/* nav2 */
+.nav2-container{
+display: flex;
+
+align-items: center;
+gap: 75px;
+background-color: var(--main-color);
+margin-top: .5rem;
+
+}
+.nav2-container a{
+text-decoration: none;
+color: var(--fourth-color);
+font-size: var(--navbar-font-size);
+padding: 15px 5px;
+}
+
+.nav2-container a:hover{
+background-color: var(--secondary-color);
+}
+
+
+
+/* START OF ORG IMAGE SLIDER */
+#org-container {
+text-align: center;
+display: flex;
+justify-content: center;
+align-items:center ;
+flex-direction: column;
+margin-top: 2rem;
+overflow: hidden;
+position: relative;
+/* width: 400px; 
+height: 300px;  */
+}
+.org-images{
+height: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#org-container img {
+max-width: 100%;
+animation: slide 0.5s ease-in-out; 
+height: 300px;
+width: 67%;
+}
+.change-image-btn {
+width: 25px;
+height: 25px;
+border-radius: 50%;
+background-color: var(--tertiary-color);
+border: none;
+margin: 5px;
+cursor: pointer; 
+margin-top: 15px;
+}
+.change-image-btn:hover{
+background-color: var(--main-color);
+transition: all ease;
+}
+
+@keyframes slide {
+from { left: -100%; opacity: 0; }
+to { left: 0; opacity: 1; }
+}
+
+
+
+/* START OF TRANSPARENCY, OFFICE ISSUANCES & COS CHARTER */
+.transparency-main-container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 2rem;
+    overflow: hidden;
+  
+}
+.transparency-main-container .transparency-sub-container{
+    display: flex;
+    /* align-items: center; */
+    justify-content:space-between;
+    gap: 2rem;
+}
+
+.transparency-main-container .transparency-sub-container img{
+    width: 410px;
+    height: 250px;
+
+}
+
+/* START OF NEWS AND UPDATES */
+
+.news-and-updates-container{
+    display: flex;
+    justify-content:center;
+   padding-bottom: 4rem;
+   height: 80vh;
+
+}
+.news-sub-container{
+    margin-top: 1rem;
+}
+.news-container{
+    width: 50%;
+}
+.news-sub-container h3{
+    text-transform:uppercase;
+    color: var(--main-color);
+    font-family: var(--text-font);
+}
+.news-sub-container hr{
+    height: 4px;
+    border: none;
+    background-color: var(--main-color);
+    }
+.news-content {
+display: flex;
+margin-top: 20px;
+}
+
+.news-content img{
+    height: 160px;
+    width: 190px;
+}
+.news-text{
+   padding-left: 1rem;
+   width: 70%;
+}
+.news-text h4{
+    font-size: 18px;
+    color: var(--main-color);
+    margin-bottom: 2px;
+}
+.news-text h5{
+    font-size: 16px;
+    color: var(--secondary-color);
+ 
+}
+.news-text p{
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+
+.updates-text{
+    padding: 1rem;
+    color: var(--main-color);
+}
+
+
+.updates-text h3{
+    text-transform: uppercase;
+    font-family: var(--text-font);
+    color: var(--main-color);
+}
+.updates-text hr{
+    height: 4px;
+    border: none;
+    background-color: var(--main-color);
+    margin-bottom: 8px;
+    }
+
+.updates-text p{
+    margin-bottom: 10px;
+}
+
+.updates-images img{
+    width: 350px;
+    height: 120px;
+}
+
+
+
+/* -START OF VIDEO SECTION */
+.videos-container{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    gap: 2rem;
+}
+
+.videos-sub-container iframe{
+    width: 650px;
+    height: 375px;
+}
+
+.videos-container .right-videos iframe{
+    width: 620px;
+    height: 180px;
+}
+
+.right-videos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+/* START OF NAVBAR 1 */
+nav{
+display: flex;
+align-items:start;
+flex-direction: column;
+position: fixed;
+width: 100%;
+z-index: 1000;
+}
+nav .logo{
+padding: 10px;
+}
+nav .logo img{
+width: 70px;
+height: 50px;
+margin-left: 1rem;
+}
+nav .container{
+flex-direction: column;
+margin-left: .2rem;
+border-top: 2px solid var(--secondary-color);
+width: 100%;
+}
+nav .logo-bars i{
+position: absolute;
+right: 5%;
+top: 1.9rem;
+}
+.container a{
+border-bottom: 2px solid var(--secondary-color);
+}
+nav form{
+display: none;
+}
+.container a{
+padding: 10px 10px;
+}
+
+
+
+
+/* START OF HEADER WITH LOGO AND CERTIFICATION OF ISO */
+.section_1{
+    padding-top: 4rem;
+}
+.urs_intro_text{
+flex-direction: column;
+}
+.urs_intro_text .iso-logo img{
+width: 260px;
+}
+
+
+
+/* START OF THE TRANSPARENCY */
+.transparency{
+    margin-left: 520px;
+    margin-top: 10px;
+    padding: auto;
+}
+}
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+
+/*  START OF NAVBAR 1 */
+nav{
+display: flex;
+align-items:start;
+flex-direction: column;
+position: fixed;
+width: 100%;
+z-index: 1000;
+}
+nav .logo img{
+margin-left: 1rem;
+}
+nav .container{
+flex-direction: column;
+margin-left: .2rem;
+border-top: 2px solid var(--secondary-color);
+width: 100%;
+}
+.container a{ 
+border-bottom: 2px solid var(--secondary-color);
+}
+.container{
+position: relative;
+}
+nav form{
+display: none;
+}
+.container a{
+padding: 10px 10px;
+}
+nav .logo-bars i{
+position: absolute;
+top: 1.9rem;
+right: 5%;
+}
+
+
+/* START OF THE SECTION 1 */
+.section_1{
+padding-top: 4rem;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+
+
+/*  START OF NAVBAR 1 */
+nav{
+display: flex;
+align-items:start;
+flex-direction: column;
+position: fixed;
+width: 100%;
+z-index: 1000;
+}
+nav .logo img{
+margin-left: 1rem;
+}
+nav .container{
+flex-direction: column;
+margin-left: .2rem;
+border-top: 2px solid var(--secondary-color);
+width: 100%;
+}
+.container a{ 
+border-bottom: 2px solid var(--secondary-color);
+}
+.container{
+position: relative;
+}
+nav form{
+display: none;
+}
+.container a{
+padding: 10px 10px;
+}
+nav .logo-bars i{
+position: absolute;
+top: 1.9rem;
+right: 5%;
+}
+
+  }
+ 
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 990px) {
+
+    
+/*  START OF NAVBAR 1 */
+nav{
+align-items:center;
+flex-direction: row;
+position: fixed;
+width: 100%;
+z-index: 1000;
+justify-content: space-around;
+}
+nav .container{
+flex-direction: row;
+border-top:none;
+}
+.container a{ 
+border-bottom: none;
+}
+nav form{
+display: flex;
+margin-right: 1rem;
+}
+.container{
+display: flex;
+justify-content: center;
+gap: 2rem;
+}
+.container a{
+padding: 10px 10px;
+}
+nav .logo-bars i{
+display: none;
+}
+}
+  
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    
+  }
