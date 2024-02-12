@@ -398,9 +398,10 @@ margin-top: 20px;
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 475px) {
 
 /* START OF NAVBAR 1 */
+
 nav{
 display: flex;
 align-items:start;
@@ -441,7 +442,6 @@ padding: 10px 10px;
 
 
 
-
 /* START OF HEADER WITH LOGO AND CERTIFICATION OF ISO */
 .section_1{
     padding-top: 4rem;
@@ -464,7 +464,7 @@ width: 260px;
 }
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 640px) {
 
 /*  START OF NAVBAR 1 */
 nav{
@@ -531,7 +531,7 @@ flex-direction: column;
 margin-left: .2rem;
 border-top: 2px solid var(--secondary-color);
 width: 100%;
-    display: flex;
+display: none;
 }
 .container a{ 
 border-bottom: 2px solid var(--secondary-color);
@@ -555,7 +555,7 @@ right: 5%;
  
 
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 990px) {
+  @media only screen and (min-width: 1024px ) {
 
     
 /*  START OF NAVBAR 1 */
@@ -570,6 +570,7 @@ justify-content: space-around;
 nav .container{
 flex-direction: row;
 border-top:none;
+display: flex;
 }
 .container a{ 
 border-bottom: none;
@@ -581,7 +582,7 @@ margin-right: 1rem;
 .container{
 display: flex;
 justify-content: center;
-gap: 2rem;
+gap: 0px;
 }
 .container a{
 padding: 10px 10px;
@@ -589,10 +590,28 @@ padding: 10px 10px;
 nav .logo-bars i{
 display: none;
 }
+.search-bar input{
+max-width: 200px;
+}  
 }
-  
-  
+
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    
+  @media only screen and (min-width: 1280px) {
+    nav .container{
+        flex-direction: row;
+        border-top:none;
+        display: flex;
+        }
+        .search-bar input{
+            max-width: 300px;
+            }  
+            
+  }
+
+  @media only screen and (min-width: 1536px) {
+    nav .container{
+        flex-direction: row;
+        border-top:none;
+        display: flex;
+        }
   }
