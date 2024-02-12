@@ -1,13 +1,26 @@
   // NAVBAR 1
 
-  document.addEventListener('DOMContentLoaded', function () {
+//   document.addEventListener('DOMContentLoaded', function () {
+//     const barsIcon = document.querySelector('.fa-bars');
+//     const container = document.querySelector('.container');
+
+//     barsIcon.addEventListener('click', function () {
+//         container.style.display = container.style.display === 'none' ? 'flex' : 'none';
+//     });
+// });
+
+document.addEventListener('DOMContentLoaded', function () {
     const barsIcon = document.querySelector('.fa-bars');
     const container = document.querySelector('.container');
+
+    // Initially hide the container element
+    container.style.display = 'none';
 
     barsIcon.addEventListener('click', function () {
         container.style.display = container.style.display === 'none' ? 'flex' : 'none';
     });
 });
+
 
 
 
