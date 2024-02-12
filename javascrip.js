@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const container = document.querySelector('.container');
 
     // Initially hide the container element
-    container.style.display = 'none';
+    // container.style.display = 'none';
 
     barsIcon.addEventListener('click', function () {
         container.style.display = container.style.display === 'none' ? 'flex' : 'none';
