@@ -568,29 +568,25 @@ z-index: 1000;
 justify-content: space-around;
 }
 nav .container{
+    justify-content: center;
 flex-direction: row;
 border-top:none;
 display: flex;
+gap: 0px;
 }
 .container a{ 
 border-bottom: none;
+padding: 10px 10px;
+font-size: var(--text-font);
 }
 nav form{
 display: flex;
 margin-right: 1rem;
 }
-.container{
-display: flex;
-justify-content: center;
-gap: 0px;
-}
-.container a{
-padding: 10px 10px;
-}
 nav .logo-bars i{
 display: none;
 }
-.search-bar input{
+nav .search-bar input{
 max-width: 200px;
 }  
 }
@@ -602,16 +598,26 @@ max-width: 200px;
         border-top:none;
         display: flex;
         }
-        .search-bar input{
-            max-width: 300px;
+       nav .container a{
+            gap: .5rem;
+            font-size: 21px;
+            }
+
+      nav  .search-bar input{
+            max-width: 350px;
             }  
             
   }
 
   @media only screen and (min-width: 1536px) {
     nav .container{
-        flex-direction: row;
-        border-top:none;
-        display: flex;
+    
+        gap: .5rem;
         }
+      nav  .container a{
+            font-size: 25px;
+            }
+            nav  .search-bar input{
+                max-width: 400px;
+                }  
   }
