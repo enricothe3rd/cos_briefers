@@ -483,7 +483,7 @@ flex-direction: column;
 margin-left: .2rem;
 border-top: 2px solid var(--secondary-color);
 width: 100%;
-       display: none; 
+   
 }
 .container a{ 
 border-bottom: 2px solid var(--secondary-color);
@@ -531,7 +531,7 @@ flex-direction: column;
 margin-left: .2rem;
 border-top: 2px solid var(--secondary-color);
 width: 100%;
-       display: none; 
+    
 }
 .container a{ 
 border-bottom: 2px solid var(--secondary-color);
