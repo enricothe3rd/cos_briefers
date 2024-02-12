@@ -402,7 +402,7 @@ nav{
 display: flex;
 align-items:start;
 flex-direction: column;
-position: fixed;
+position:scroll;
 width: 100%;
 z-index: 1000;
 }
@@ -447,7 +447,7 @@ nav{
 display: flex;
 align-items:start;
 flex-direction: column;
-position: fixed;
+position:scroll;
 width: 100%;
 z-index: 1000;
 }
