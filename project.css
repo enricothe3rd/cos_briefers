@@ -572,9 +572,9 @@ nav .container{
 flex-direction: row;
 border-top:none;
 display: flex;
-gap: 0px;
+gap: .5rem;
 }
-.container a{ 
+nav .container a{ 
 border-bottom: none;
 padding: 10px 10px;
 font-size: var(--text-font);
@@ -587,7 +587,7 @@ nav .logo-bars i{
 display: none;
 }
 nav .search-bar input{
-max-width: 200px;
+max-width: 180px;
 }  
 }
 
